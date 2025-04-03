@@ -1,0 +1,11 @@
+# Ignora l'ambiente virtuale
+trajllm/
+venv/
+
+# Ignora i file di cache di Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignora le configurazioni locali di VSCode (se usi VSCode)
+.vscode/
