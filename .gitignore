@@ -2,10 +2,58 @@
 trajllm/
 venv/
 
-# Ignora i file di cache di Python
+# Ignora file di cache di Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Ignora le configurazioni locali di VSCode (se usi VSCode)
+# Ignora file di log
+*.log
+
+# Ignora dataset di grandi dimensioni (se non vuoi versionarli)
+POI_data/*.csv
+POI_data/*.pkl
+POI_data/*.json
+
+# Ignora file temporanei
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignora file di configurazione locali di editor
 .vscode/
+.idea/
+*.sublime-workspace
+
+# Ignora dipendenze installate con pip (se non usi un venv dedicato)
+site-packages/
+
+# Ignora immagini di cache
+img/cache/
+
+# Ignora file di modello pre-addestrati e librerie binarie pesanti
+*.dylib
+*.so
+*.dll
+*.h5
+*.onnx
+*.pb
+*.tflite
+*.pth
+*.pkl
+*.ckpt
+
+# Ignora file di output e checkpoint di addestramento
+checkpoints/
+models/
+outputs/
+runs/
+logs/
+
+# Ignora credenziali o configurazioni sensibili (se presenti)
+.env
+config.json
+secrets.json
